@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar color="light">
+      <ion-title>
+        Ajouter
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+    <h2>Ajouter un Jeu</h2>
+    <div class="hr"> </div><br>
+  
+    <ion-list>
+      <ion-item>
+        <ion-label fixed>Nom</ion-label>
+        <ion-input type="text" [(ngModel)]="Nom"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Categorie</ion-label>
+        <ion-input [(ngModel)]="Categorie" type="text"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label fixed>Editeur</ion-label>
+        <ion-input [(ngModel)]="Editeur" type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Image</ion-label>
+        <ion-input [(ngModel)]="Image" type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Date</ion-label>
+        <ion-input [(ngModel)]="Date" type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Note</ion-label>
+        <ion-input [(ngModel)]="Note" type="text"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label fixed>Prix</ion-label>
+        <ion-input [(ngModel)]="Prix" type="text"></ion-input>
+      </ion-item>
+  
+    </ion-list>
+  
+    <button ion-button full color="light" (tap)="addJeux()">Save my game !!</button>
+  
+  </ion-content>

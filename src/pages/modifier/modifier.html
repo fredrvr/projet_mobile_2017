@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar color="light">
+      <ion-title>Modifier un jeu</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+    <h1>Permet de modifier les données de façon structurées</h1>
+    <ion-list>
+      <div *ngFor="let jeu of jeux">
+        <ion-item>
+          <ion-label fixed>Nom</ion-label>
+          <ion-input type="text" [(ngModel)]="Nom" value="{{jeu.Nom}}"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>Categorie</ion-label>
+          <ion-input type="text" [(ngModel)]="Categorie" value="{{jeu.Categorie}}"></ion-input>
+        </ion-item>
+        
+        <ion-item>
+          <ion-label stacked>Editeur</ion-label>
+          <ion-input type="text" [(ngModel)]="Editeur" value="{{jeu.Editeur}}"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>Image</ion-label>
+          <ion-input [(ngModel)]="Image" type="text" value="{{jeu.Image}}"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>Date</ion-label>
+          <ion-input [(ngModel)]="Date" type="text" value="{{jeu.Date}}"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>Note</ion-label>
+          <ion-input [(ngModel)]="Note" type="text" value="{{jeu.Note}}"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label stacked>Prix</ion-label>
+          <ion-input [(ngModel)]="Prix" type="text" value="{{jeu.Prix}}"></ion-input>
+        </ion-item>
+
+      </div>
+    </ion-list>
+  
+    <button ion-button full color="light" (tap)="updateJeux()">Update my game !!</button>
+
+  </ion-content>

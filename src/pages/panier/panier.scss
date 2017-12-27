@@ -1,0 +1,40 @@
+page-panier {
+    h2{
+        color: lightgray;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .hr {
+        border-bottom: 1px solid #ccc;
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .images{
+        width: 150px;
+        height: 207px;
+    }
+
+    .card-title{
+        margin-top: 40px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .card-stitle{
+        margin-top: 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .card-stitles{
+        margin-top: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .open{
+        margin-top: 48px;
+    }
+}

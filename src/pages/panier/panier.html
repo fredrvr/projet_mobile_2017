@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar color="light">
+    <ion-title>
+      Panier
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngFor="let jeu of jeux" >
+    <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <img class="images" src="assets/{{jeu.Image}}"/>
+            </ion-col>
+            <ion-col col-6>
+              <div class="card-title"><b>{{ jeu.Nom }}</b></div>
+              <div class="card-stitle"><b>{{ jeu.Categorie }}</b></div>
+              <div class="card-stitles"><u>Prix</u><b> : {{ jeu.Prix }} € </b></div>
+              <div class="open">
+                <button ion-button full color="light" (click)="openFichePage(jeu.id)">
+                  <ion-icon name="book"></ion-icon>                 
+                </button>
+                <button ion-button full color="danger" (click)="deletePanier(jeu.id)">
+                  <ion-icon name="trash"></ion-icon>                 
+                </button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-card>
+  </div>
+
+</ion-content>
